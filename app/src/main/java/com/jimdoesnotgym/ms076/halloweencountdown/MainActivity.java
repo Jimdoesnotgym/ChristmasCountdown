@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 int days = (int)(millisUntilFinished/(1000*60*60*24));
                 int hours = (int)((millisUntilFinished/(1000*60*60))%24);
                 int min = (int)((millisUntilFinished/(1000*60))%60);
-                int sec = (int)(millisUntilFinished/(100)%24);
+                int sec = (int)(millisUntilFinished/1000)%24;
 
                 txtDaysRemain.setText(String.format("%d", days));
                 txtLongString.setText(String.format("%d DAYS %02d: %02d: %02d", days, hours, min, sec));
