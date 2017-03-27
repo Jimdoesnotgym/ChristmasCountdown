@@ -27,4 +27,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:support-v4:23.4.0'
     testCompile 'junit:junit:4.12'
+
+    //Added library for custom font to all View
+    compile 'me.anwarshahriar:calligrapher:1.0'
 }
